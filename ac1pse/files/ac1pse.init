@@ -1,0 +1,8 @@
+#!/bin/sh /etc/rc.common
+
+START=50
+PROG=/usr/sbin/ac1pse
+
+start() {
+    "$PROG"
+}
