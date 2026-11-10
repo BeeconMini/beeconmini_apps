@@ -1,7 +1,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=bmgsw
-PKG_VERSION:=1.0.0
+PKG_VERSION:=1.1.0
 
 PKG_BUILD_DIR := $(BUILD_DIR)/$(PKG_NAME)
 
@@ -11,7 +11,7 @@ define Package/$(PKG_NAME)
   SECTION:=BeeconMini
   CATEGORY:=BeeconMini
   TITLE:=BeeconMini Manager
-  DEPENDS:=@TARGET_mediatek_filogic +kmod-mdio-netlink +kmod-i2c-gpio +libmnl +libgpiod +libubox
+  DEPENDS:=@TARGET_mediatek_filogic +kmod-mdio-netlink +kmod-i2c-gpio
 endef
 
 define Build/Compile

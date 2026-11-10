@@ -1,7 +1,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=ac1pse
-PKG_VERSION:=1.0.0
+PKG_VERSION:=1.1.0
 
 PKG_BUILD_DIR := $(BUILD_DIR)/$(PKG_NAME)
 
@@ -11,7 +11,7 @@ define Package/$(PKG_NAME)
   SECTION:=BeeconMini
   CATEGORY:=BeeconMini
   TITLE:=SEED AC1 PSE Driver
-  DEPENDS:=@TARGET_mediatek_filogic +libgpiod +kmod-i2c-gpio
+  DEPENDS:=@TARGET_mediatek_filogic +kmod-i2c-gpio
 endef
 
 define Build/Compile
